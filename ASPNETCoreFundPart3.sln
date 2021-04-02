@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkApp", "TalkApp\TalkApp.csproj", "{C2142E0D-9822-4FEF-B59E-E8AB073E3B9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalkApp", "TalkApp\TalkApp.csproj", "{C2142E0D-9822-4FEF-B59E-E8AB073E3B9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkApp.Model", "TalkApp.Model\TalkApp.Model.csproj", "{D93FC58D-F71D-47F3-90A5-1D357BC826F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalkApp.Model", "TalkApp.Model\TalkApp.Model.csproj", "{D93FC58D-F71D-47F3-90A5-1D357BC826F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNote.Models", "DotNetNote.Models\DotNetNote.Models.csproj", "{B771F343-90CC-408A-9EBE-BC0449C5FA95}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DotNetNote.SqlServer", "DotNetNote.SqlServer\DotNetNote.SqlServer.sqlproj", "{DE79B7EE-1FA4-42ED-8FD9-3DB4203F32A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNote.BlazorServer", "DotNetNote.BlazorServer\DotNetNote.BlazorServer.csproj", "{221475F3-810B-4A3E-BE2D-BE99A03CDE3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_TalkApp", "_TalkApp", "{99E24D07-9142-4629-A582-7DE2CDBDA65D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,27 @@ Global
 		{D93FC58D-F71D-47F3-90A5-1D357BC826F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D93FC58D-F71D-47F3-90A5-1D357BC826F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D93FC58D-F71D-47F3-90A5-1D357BC826F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B771F343-90CC-408A-9EBE-BC0449C5FA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B771F343-90CC-408A-9EBE-BC0449C5FA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B771F343-90CC-408A-9EBE-BC0449C5FA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B771F343-90CC-408A-9EBE-BC0449C5FA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE79B7EE-1FA4-42ED-8FD9-3DB4203F32A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE79B7EE-1FA4-42ED-8FD9-3DB4203F32A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE79B7EE-1FA4-42ED-8FD9-3DB4203F32A9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DE79B7EE-1FA4-42ED-8FD9-3DB4203F32A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE79B7EE-1FA4-42ED-8FD9-3DB4203F32A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE79B7EE-1FA4-42ED-8FD9-3DB4203F32A9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{221475F3-810B-4A3E-BE2D-BE99A03CDE3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221475F3-810B-4A3E-BE2D-BE99A03CDE3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221475F3-810B-4A3E-BE2D-BE99A03CDE3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221475F3-810B-4A3E-BE2D-BE99A03CDE3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2142E0D-9822-4FEF-B59E-E8AB073E3B9D} = {99E24D07-9142-4629-A582-7DE2CDBDA65D}
+		{D93FC58D-F71D-47F3-90A5-1D357BC826F2} = {99E24D07-9142-4629-A582-7DE2CDBDA65D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50426DE3-138C-4142-9395-03DB6857D75F}

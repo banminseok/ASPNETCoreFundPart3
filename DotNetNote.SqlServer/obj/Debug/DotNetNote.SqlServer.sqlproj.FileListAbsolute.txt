@@ -1,0 +1,9 @@
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\bin\Debug\DotNetNote.SqlServer.dacpac
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\bin\Debug\DotNetNote.SqlServer.dll
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\bin\Debug\DotNetNote.SqlServer.pdb
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\Model.xml
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\refactor.xml
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\postdeploy.sql
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\predeploy.sql
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.dll
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.pdb

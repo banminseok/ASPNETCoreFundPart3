@@ -9,3 +9,4 @@ D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\TalkApp.Model.cspr
 D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\TalkApp.Model.dll
 D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\ref\TalkApp.Model.dll
 D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\TalkApp.Model.pdb
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\TalkApp.Model.csprojAssemblyReference.cache
