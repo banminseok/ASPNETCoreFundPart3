@@ -1,0 +1,11 @@
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\bin\Debug\net5.0\TalkApp.Model.deps.json
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\bin\Debug\net5.0\TalkApp.Model.dll
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\bin\Debug\net5.0\ref\TalkApp.Model.dll
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\bin\Debug\net5.0\TalkApp.Model.pdb
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\TalkApp.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\TalkApp.Model.AssemblyInfoInputs.cache
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\TalkApp.Model.AssemblyInfo.cs
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\TalkApp.Model.csproj.CoreCompileInputs.cache
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\TalkApp.Model.dll
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\ref\TalkApp.Model.dll
+D:\VsTest2\ASPNETCoreFundPart3\TalkApp.Model\obj\Debug\net5.0\TalkApp.Model.pdb
