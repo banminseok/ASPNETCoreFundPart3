@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand text-nowrap" asp-area="" asp-controller="Home" asp-action="Index">DotNetNote</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item d-sm-none d-md-none d-lg-block">
+                            <a class="nav-link text-dark text-nowrap" asp-area="" asp-controller="Companies" asp-action="Index">Companies</a>
+                        </li>
+                        <li class="nav-item d-sm-none d-md-none d-lg-block">
+                            <a class="nav-link text-dark text-nowrap" asp-area="" asp-controller="Blog" asp-action="Index">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark text-nowrap" asp-area="" asp-controller="DotNetNote" asp-action="Index">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            <p>&copy; @DateTime.Now.Year - halfmin </p>
+            <p>현재 Url : @Context.Request.Path/@Context.Request.QueryString</p>
+        </div>
+    </footer>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
