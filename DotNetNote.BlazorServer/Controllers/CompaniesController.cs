@@ -29,6 +29,7 @@ namespace DotNetNote.BlazorServer.Controllers
         {
             ViewBag.Message = $"{name}을 입력 했습니다.";
             return View();
+
         }
 
         [HttpGet]
