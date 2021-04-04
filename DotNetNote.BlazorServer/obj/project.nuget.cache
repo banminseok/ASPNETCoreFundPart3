@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "f5eECzdee81vu0wrBEj5IYM7MenPm1Ks4C94KLnp8fnwboeHI675q21VLsR0q69pO2/JZNy8rX8TWAwKIqYC4A==",
+  "dgSpecHash": "OcWZiihLv5+UURR33K0+NCY5HDWKBORAFwQ1BF9UWmKbioGJjkCYThM/rkXXTDo3WPZZSQ8YRrWoAvAfD2loTg==",
   "success": true,
-  "projectFilePath": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj",
+  "projectFilePath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\반민석\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
-    "C:\\Users\\반민석\\.nuget\\packages\\dul\\1.2.7\\dul.1.2.7.nupkg.sha512",
     "C:\\Users\\반민석\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\반민석\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",
     "C:\\Users\\반민석\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.4\\microsoft.aspnetcore.cryptography.keyderivation.5.0.4.nupkg.sha512",

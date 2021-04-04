@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "D3Vc7Ng7MGbqDeoy9RJ0pHN7PaP09Tv1G8iSgrXP7Zla0WsCACLeL/KSeIWQ0SdXl+WeWXtMi+QH/hxmJwgiJw==",
+  "dgSpecHash": "DT9v1RDEo9BwVoKKI8PhAUd8vAstKlEIVrtQqgEOLrlL74FOrJhHWFsW9em+0I04Hfs9S3vkiv1h3EJpM9uknw==",
   "success": true,
-  "projectFilePath": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj",
+  "projectFilePath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\반민석\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
-    "C:\\Users\\반민석\\.nuget\\packages\\dul\\1.2.7\\dul.1.2.7.nupkg.sha512",
     "C:\\Users\\반민석\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\반민석\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.2\\microsoft.data.sqlclient.2.1.2.nupkg.sha512",
     "C:\\Users\\반민석\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

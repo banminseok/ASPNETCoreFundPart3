@@ -11,15 +11,6 @@
           "lib/net5.0/Dapper.dll": {}
         }
       },
-      "Dul/1.2.7": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Dul.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Dul.dll": {}
-        }
-      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -758,7 +749,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Dapper": "2.0.78",
-          "Dul": "1.2.7",
+          "Dul.Data": "1.0.0",
           "Microsoft.Data.SqlClient": "2.1.2",
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4"
@@ -768,6 +759,16 @@
         },
         "runtime": {
           "bin/placeholder/DotNetNote.Models.dll": {}
+        }
+      },
+      "Dul.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Dul.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dul.Data.dll": {}
         }
       }
     }
@@ -788,18 +789,6 @@
         "lib/net5.0/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml"
-      ]
-    },
-    "Dul/1.2.7": {
-      "sha512": "vM8TYCXg1mfmKi/VYmwrH8W8wFGU881f4cU39t6lVhUsPTl+1AhqQhM6cELh5k5a/igCOG/vrnyd/DmJw5Nckw==",
-      "type": "package",
-      "path": "dul/1.2.7",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "dul.1.2.7.nupkg.sha512",
-        "dul.nuspec",
-        "lib/netstandard2.0/Dul.dll"
       ]
     },
     "Humanizer.Core/2.8.26": {
@@ -2267,11 +2256,17 @@
       "type": "project",
       "path": "../DotNetNote.Models/DotNetNote.Models.csproj",
       "msbuildProject": "../DotNetNote.Models/DotNetNote.Models.csproj"
+    },
+    "Dul.Data/1.0.0": {
+      "type": "project",
+      "path": "../Dul.Data/Dul.Data.csproj",
+      "msbuildProject": "../Dul.Data/Dul.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "DotNetNote.Models >= 1.0.0",
+      "Dul.Data >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 5.0.4",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.4",
       "Microsoft.AspNetCore.Identity.UI >= 5.0.4",
@@ -2281,24 +2276,24 @@
   },
   "packageFolders": {
     "C:\\Users\\반민석\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj",
+      "projectUniqueName": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj",
       "projectName": "DotNetNote.BlazorServer",
-      "projectPath": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj",
+      "projectPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj",
       "packagesPath": "C:\\Users\\반민석\\.nuget\\packages\\",
-      "outputPath": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\obj\\",
+      "outputPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\반민석\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -2311,8 +2306,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj": {
-              "projectPath": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj"
+            "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj": {
+              "projectPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj"
+            },
+            "F:\\VSTEst2\\ASPNETCoreFundPart3\\Dul.Data\\Dul.Data.csproj": {
+              "projectPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\Dul.Data\\Dul.Data.csproj"
             }
           }
         }
@@ -2366,7 +2364,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,9 @@
+F:\VSTEst2\ASPNETCoreFundPart3\Dul.Data\bin\Debug\netcoreapp3.1\Dul.Data.deps.json
+F:\VSTEst2\ASPNETCoreFundPart3\Dul.Data\bin\Debug\netcoreapp3.1\Dul.Data.dll
+F:\VSTEst2\ASPNETCoreFundPart3\Dul.Data\bin\Debug\netcoreapp3.1\Dul.Data.pdb
+F:\VSTEst2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.csprojAssemblyReference.cache
+F:\VSTEst2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.AssemblyInfoInputs.cache
+F:\VSTEst2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.AssemblyInfo.cs
+F:\VSTEst2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.csproj.CoreCompileInputs.cache
+F:\VSTEst2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.dll
+F:\VSTEst2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.pdb

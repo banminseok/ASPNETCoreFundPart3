@@ -4,7 +4,7 @@
 
 <h3>입력</h3>
 <form action="/Companies/Index" method="post">
-    회사명 : 
+    회사명 :
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" name="name" id="name" value="" />
         <label class="mdl-textfield__label" for="Name">Name...</label>
@@ -14,17 +14,28 @@
 </form>
 
 <hr />
-<h2>출력</h2>
-<table>
+<h3>출력</h3>
+<table class="mdl-data-table mdl-js-data-table w-50" >
     <thead>
-        <th>번호</th><th>회사명</th>
+        <tr>
+            <th class="mdl-data-table__cell--non-numeric">번호</th>
+            <th class="mdl-data-table__cell--non-numeric">회사명</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
             <td>
+                1
             </td>
-            <td>
+            <td class="mdl-data-table__cell--non-numeric">
+                Foo  회사
             </td>
         </tr>
-    </tbody>    
+    </tbody>
 </table>
+
+@if (ViewBag.Message !=null)
+{
+    <hr />
+    @ViewBag.Message
+}

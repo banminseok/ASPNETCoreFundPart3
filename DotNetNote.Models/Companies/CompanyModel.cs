@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DotNetNote.Models.Companies
 {
-    class Class1
+    public class CompanyModel
     {
+        public long Id { get; set; }
+        public string Name { get; set; }
     }
 }

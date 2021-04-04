@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DotNetNote.Models\DotNetNote.Models.csproj" />
+    <ProjectReference Include="..\Dul.Data\Dul.Data.csproj" />
   </ItemGroup>
 
 </Project>

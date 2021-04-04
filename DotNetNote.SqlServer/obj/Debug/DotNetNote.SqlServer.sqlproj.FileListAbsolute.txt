@@ -7,3 +7,13 @@ D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\postdeploy.sql
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\predeploy.sql
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.dll
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.pdb
+F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\bin\Debug\DotNetNote.SqlServer.dacpac
+F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\bin\Debug\DotNetNote.SqlServer.dll
+F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\bin\Debug\DotNetNote.SqlServer.pdb
+F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.sqlprojAssemblyReference.cache
+F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\Model.xml
+F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\refactor.xml
+F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\postdeploy.sql
+F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\predeploy.sql
+F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.dll
+F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.pdb

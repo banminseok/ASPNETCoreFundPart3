@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj": {}
+    "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj": {}
   },
   "projects": {
-    "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj": {
+    "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj",
+        "projectUniqueName": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj",
         "projectName": "DotNetNote.BlazorServer",
-        "projectPath": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj",
+        "projectPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\DotNetNote.BlazorServer.csproj",
         "packagesPath": "C:\\Users\\반민석\\.nuget\\packages\\",
-        "outputPath": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\obj\\",
+        "outputPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.BlazorServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\반민석\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -32,8 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj": {
-                "projectPath": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj"
+              "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj": {
+                "projectPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj"
+              },
+              "F:\\VSTEst2\\ASPNETCoreFundPart3\\Dul.Data\\Dul.Data.csproj": {
+                "projectPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\Dul.Data\\Dul.Data.csproj"
               }
             }
           }
@@ -87,26 +90,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj": {
+    "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj",
+        "projectUniqueName": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj",
         "projectName": "DotNetNote.Models",
-        "projectPath": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj",
+        "projectPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.Models\\DotNetNote.Models.csproj",
         "packagesPath": "C:\\Users\\반민석\\.nuget\\packages\\",
-        "outputPath": "D:\\VsTest2\\ASPNETCoreFundPart3\\DotNetNote.Models\\obj\\",
+        "outputPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\DotNetNote.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\반민석\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -118,7 +121,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\VSTEst2\\ASPNETCoreFundPart3\\Dul.Data\\Dul.Data.csproj": {
+                "projectPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\Dul.Data\\Dul.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -134,10 +141,6 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.78, )"
-            },
-            "Dul": {
-              "target": "Package",
-              "version": "[1.2.7, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
@@ -167,7 +170,65 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\VSTEst2\\ASPNETCoreFundPart3\\Dul.Data\\Dul.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\VSTEst2\\ASPNETCoreFundPart3\\Dul.Data\\Dul.Data.csproj",
+        "projectName": "Dul.Data",
+        "projectPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\Dul.Data\\Dul.Data.csproj",
+        "packagesPath": "C:\\Users\\반민석\\.nuget\\packages\\",
+        "outputPath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\Dul.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\반민석\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }

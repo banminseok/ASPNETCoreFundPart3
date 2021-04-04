@@ -9,7 +9,7 @@
       "DotNetNote.Models/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.78",
-          "Dul": "1.2.7",
+          "Dul.Data": "1.0.0",
           "Microsoft.Data.SqlClient": "2.1.2",
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4"
@@ -23,14 +23,6 @@
           "lib/net5.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.78.45418"
-          }
-        }
-      },
-      "Dul/1.2.7": {
-        "runtime": {
-          "lib/netstandard2.0/Dul.dll": {
-            "assemblyVersion": "1.2.7.0",
-            "fileVersion": "1.2.7.0"
           }
         }
       },
@@ -470,6 +462,11 @@
             "fileVersion": "4.700.19.56404"
           }
         }
+      },
+      "Dul.Data/1.0.0": {
+        "runtime": {
+          "Dul.Data.dll": {}
+        }
       }
     }
   },
@@ -485,13 +482,6 @@
       "sha512": "sha512-vLPwL2HZXp/DN17Eu7sg6GMEj02alq7jcy6atn5Gv8i96b9Hu1UoxlCrhInUPfSFLQQiD8O7pdWAE1fdUEO/1Q==",
       "path": "dapper/2.0.78",
       "hashPath": "dapper.2.0.78.nupkg.sha512"
-    },
-    "Dul/1.2.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vM8TYCXg1mfmKi/VYmwrH8W8wFGU881f4cU39t6lVhUsPTl+1AhqQhM6cELh5k5a/igCOG/vrnyd/DmJw5Nckw==",
-      "path": "dul/1.2.7",
-      "hashPath": "dul.1.2.7.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
@@ -772,6 +762,11 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "Dul.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
