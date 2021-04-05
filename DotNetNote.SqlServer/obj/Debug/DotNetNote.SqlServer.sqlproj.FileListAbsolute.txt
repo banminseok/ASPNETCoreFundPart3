@@ -17,3 +17,4 @@ F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\postdeploy.sql
 F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\predeploy.sql
 F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.dll
 F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.pdb
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.sqlprojAssemblyReference.cache

@@ -25,3 +25,6 @@ F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.Models\obj\Debug\net5.0\DotNetNote.Mod
 F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.Models\obj\Debug\net5.0\DotNetNote.Models.dll
 F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.Models\obj\Debug\net5.0\ref\DotNetNote.Models.dll
 F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.Models\obj\Debug\net5.0\DotNetNote.Models.pdb
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.Models\bin\Debug\net5.0\Dul.Data.dll
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.Models\bin\Debug\net5.0\Dul.Data.pdb
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.Models\obj\Debug\net5.0\DotNetNote.Models.csproj.CopyComplete

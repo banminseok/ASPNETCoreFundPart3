@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pCV8pUYjYGJ/Z34aUAc3wq/2dxvd+d1o5TOv5Xtfqocx4eEjHPw2sUxnmBbCOF6IMn2qBDBnb+Z1a8ts2hpXXw==",
+  "dgSpecHash": "IYd8Z/H7+o1hOO8AthFttBrI1TlJaclVi3p7KofWp86fugzlhK7TUnkgsSaTzIyLhCtGVv2y1H4/r0ZnTopGXw==",
   "success": true,
-  "projectFilePath": "F:\\VSTEst2\\ASPNETCoreFundPart3\\TalkApp.Model\\TalkApp.Model.csproj",
+  "projectFilePath": "D:\\VsTest2\\ASPNETCoreFundPart3\\TalkApp.Model\\TalkApp.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\반민석\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\반민석\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

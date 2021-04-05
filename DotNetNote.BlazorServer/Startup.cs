@@ -40,12 +40,14 @@ namespace DotNetNote.BlazorServer
             //services.AddTransient<ICompanyRepository, CompanyRepositoryAdo>();
             //services.AddSingleton<ICompanyRepository>(
             //    new CompanyRepositoryAdo(Configuration["ConnectionStrings:DefaultConnection"]));
+            //services.AddSingleton<ICompanyRepository>(
+            //    new CompanyRepositoryAdo(Configuration.GetConnectionString("DefaultConnection")));
             services.AddSingleton<ICompanyRepository>(
-                new CompanyRepositoryAdo(Configuration.GetConnectionString("DefaultConnection")));
+               new CompanyRepositoryDapper(Configuration.GetConnectionString("DefaultConnection")));
         }
 
-    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {

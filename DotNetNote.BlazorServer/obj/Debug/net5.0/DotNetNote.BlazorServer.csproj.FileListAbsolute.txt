@@ -99,7 +99,6 @@ D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\obj\Debug\net5.0\DotNetNo
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\obj\Debug\net5.0\DotNetNote.BlazorServer.csprojAssemblyReference.cache
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\obj\Debug\net5.0\Razor\Views\Companies\Index.cshtml.g.cs
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\bin\Debug\net5.0\Dapper.dll
-D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\bin\Debug\net5.0\Dul.dll
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\bin\Debug\net5.0\DotNetNote.Models.dll
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\bin\Debug\net5.0\DotNetNote.Models.pdb
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\obj\Debug\net5.0\Razor\Views\Shared\_LayoutCompany.cshtml.g.cs
@@ -214,3 +213,6 @@ F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\obj\Debug\net5.0\DotNetNo
 F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\obj\Debug\net5.0\ref\DotNetNote.BlazorServer.dll
 F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\obj\Debug\net5.0\DotNetNote.BlazorServer.pdb
 F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\obj\Debug\net5.0\DotNetNote.BlazorServer.genruntimeconfig.cache
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\bin\Debug\net5.0\Dul.Data.dll
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\bin\Debug\net5.0\Dul.Data.pdb
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.BlazorServer\obj\Debug\net5.0\Razor\Views\Companies\Manage.cshtml.g.cs

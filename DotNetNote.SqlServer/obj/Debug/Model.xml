@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="DotNetNote.SqlServer.dll" />
-			<Metadata Name="FileName" Value="F:\VSTEST2\ASPNETCOREFUNDPART3\DOTNETNOTE.SQLSERVER\OBJ\DEBUG\DOTNETNOTE.SQLSERVER.DLL" />
+			<Metadata Name="FileName" Value="D:\VSTEST2\ASPNETCOREFUNDPART3\DOTNETNOTE.SQLSERVER\OBJ\DEBUG\DOTNETNOTE.SQLSERVER.DLL" />
 			<Metadata Name="AssemblyName" Value="DotNetNote.SqlServer" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.SqlServer\obj\Debug\DotNetNote.SqlServer.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
