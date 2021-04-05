@@ -1,4 +1,6 @@
 ﻿using Dul.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +9,23 @@ using System.Threading.Tasks;
 
 namespace DotNetNote.Models.Companies
 {
-    class CompanyRepositoryEntityFramework : ICompanyRepository
+    public class CompanyRepositoryEntityFramework : ICompanyRepository
     {
+        private IConfiguration _configuration;
+
+        public CompanyRepositoryEntityFramework(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         public CompanyModel Add(CompanyModel model)
         {
-            throw new NotImplementedException();
+            using (var db = new CompanyContext(_configuration))
+            {
+                db.Companies.Add(model);
+                db.SaveChanges();
+            }
+
+            return model;
         }
 
         public CompanyModel Browse(int id)
@@ -46,7 +60,12 @@ namespace DotNetNote.Models.Companies
 
         public List<CompanyModel> Read()
         {
-            throw new NotImplementedException();
+            var companies = new List<CompanyModel>();
+            using (var db = new CompanyContext(_configuration))
+            {
+                companies = db.Companies.ToList();
+            }                
+            return companies;
         }
 
         public List<CompanyModel> Search(string query)

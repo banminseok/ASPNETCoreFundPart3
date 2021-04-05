@@ -28,3 +28,6 @@ F:\VSTEst2\ASPNETCoreFundPart3\DotNetNote.Models\obj\Debug\net5.0\DotNetNote.Mod
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.Models\bin\Debug\net5.0\Dul.Data.dll
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.Models\bin\Debug\net5.0\Dul.Data.pdb
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.Models\obj\Debug\net5.0\DotNetNote.Models.csproj.CopyComplete
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.Models\bin\Debug\net5.0\DotNetNote.Models.runtimeconfig.json
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.Models\bin\Debug\net5.0\DotNetNote.Models.runtimeconfig.dev.json
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote.Models\obj\Debug\net5.0\DotNetNote.Models.genruntimeconfig.cache

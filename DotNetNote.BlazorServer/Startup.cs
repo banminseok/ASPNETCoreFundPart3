@@ -37,13 +37,19 @@ namespace DotNetNote.BlazorServer
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddSingleton<WeatherForecastService>();
 
+            //services.AddDbContext<CompanyContext>(options =>
+            //    options.UseSqlServer(
+            //        Configuration.GetConnectionString("DefaultConnection"))
+            //);
             //services.AddTransient<ICompanyRepository, CompanyRepositoryAdo>();
             //services.AddSingleton<ICompanyRepository>(
             //    new CompanyRepositoryAdo(Configuration["ConnectionStrings:DefaultConnection"]));
             //services.AddSingleton<ICompanyRepository>(
             //    new CompanyRepositoryAdo(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddSingleton<ICompanyRepository>(
-               new CompanyRepositoryDapper(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddSingleton<ICompanyRepository>(
+            //   new CompanRepositoryDapper(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddSingleton<ICompanyRepository, CompanyRepositoryEntityFramework>();
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
