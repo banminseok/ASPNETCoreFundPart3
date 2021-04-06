@@ -24,8 +24,11 @@ namespace DotNetNote.Models.Companies
         public DbSet<CompanyModel> Companies { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(_connectionString);
+        {            
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(_connectionString);
+            }
             //base.OnConfiguring(optionsBuilder);
         }
     }

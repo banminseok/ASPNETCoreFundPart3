@@ -1,0 +1,9 @@
+D:\VsTest2\ASPNETCoreFundPart3\IdeaApp.Models\bin\Debug\netstandard2.1\IdeaApp.Models.deps.json
+D:\VsTest2\ASPNETCoreFundPart3\IdeaApp.Models\bin\Debug\netstandard2.1\IdeaApp.Models.dll
+D:\VsTest2\ASPNETCoreFundPart3\IdeaApp.Models\bin\Debug\netstandard2.1\IdeaApp.Models.pdb
+D:\VsTest2\ASPNETCoreFundPart3\IdeaApp.Models\obj\Debug\netstandard2.1\IdeaApp.Models.AssemblyInfoInputs.cache
+D:\VsTest2\ASPNETCoreFundPart3\IdeaApp.Models\obj\Debug\netstandard2.1\IdeaApp.Models.AssemblyInfo.cs
+D:\VsTest2\ASPNETCoreFundPart3\IdeaApp.Models\obj\Debug\netstandard2.1\IdeaApp.Models.csproj.CoreCompileInputs.cache
+D:\VsTest2\ASPNETCoreFundPart3\IdeaApp.Models\obj\Debug\netstandard2.1\IdeaApp.Models.dll
+D:\VsTest2\ASPNETCoreFundPart3\IdeaApp.Models\obj\Debug\netstandard2.1\IdeaApp.Models.pdb
+D:\VsTest2\ASPNETCoreFundPart3\IdeaApp.Models\obj\Debug\netstandard2.1\IdeaApp.Models.csprojAssemblyReference.cache
