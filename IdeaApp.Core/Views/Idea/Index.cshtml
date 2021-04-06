@@ -1,0 +1,14 @@
+﻿@model List<IdeaApp.Models.Idea>
+<h2>아이디어 관리자</h2>
+
+<ul>
+    @foreach (var m in Model)
+    {
+        <li> @m.Id - @m.Note </li>
+    }
+</ul>
+
+<form method="post" action="/Idea/Index">
+    <input type="text" name="Note" id="Note" value=""/>
+    <button type="submit" name="아이디어 저장" id="아이디어 저장">아이디어 저장</button>
+</form>
