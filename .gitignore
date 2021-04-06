@@ -3,3 +3,4 @@
 ################################################################################
 
 /DotNetNote.SqlServer/DotNetNote.SqlServer.dbmdl
+*.jfm
