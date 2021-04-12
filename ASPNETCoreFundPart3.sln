@@ -29,7 +29,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_IdeaApp", "_IdeaApp", "{8B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScaffoldingDemo", "ScaffoldingDemo\ScaffoldingDemo.csproj", "{92281442-C1B6-408B-BCBD-3188C20694F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNote.Angular", "DotNetNote.Angular\DotNetNote.Angular.csproj", "{506A174A-3148-4137-BB1B-10ECCC29ECEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNote.Angular", "DotNetNote.Angular\DotNetNote.Angular.csproj", "{506A174A-3148-4137-BB1B-10ECCC29ECEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetSale.Devices", "DotNetSale.Devices\DotNetSale.Devices.csproj", "{F79F8DE4-A172-4A12-A4BF-148D3022ED19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{506A174A-3148-4137-BB1B-10ECCC29ECEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{506A174A-3148-4137-BB1B-10ECCC29ECEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{506A174A-3148-4137-BB1B-10ECCC29ECEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79F8DE4-A172-4A12-A4BF-148D3022ED19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79F8DE4-A172-4A12-A4BF-148D3022ED19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79F8DE4-A172-4A12-A4BF-148D3022ED19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79F8DE4-A172-4A12-A4BF-148D3022ED19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
