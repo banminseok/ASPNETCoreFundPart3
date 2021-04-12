@@ -1,0 +1,10 @@
+﻿@model List<DotNetNote.Models.Buyer>
+
+<h2>Buyer/Index</h2>
+
+<ul>
+    @foreach (var buyer in Model)
+    {
+    <li>@buyer.BuyerId - @buyer.BuyerName - @buyer.BuyerCode</li>
+    }
+</ul>
