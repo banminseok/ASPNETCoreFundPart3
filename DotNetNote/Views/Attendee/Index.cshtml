@@ -1,0 +1,18 @@
+﻿@model List<DotNetNote.Models.Attendee>
+
+@{
+    ViewData["Title"] = "참여자 List";
+}
+<h2>Attendee List</h2>
+<div class="form-group">
+    <a asp-controller="Attendee" asp-action="Create" class="btn btn-outline-dark ">참가 등록하기</a>
+</div>
+<hr/>
+<ul>
+    @foreach (var m in Model)
+    {
+    <li>@m.Id - @m.Name ( @m.UserId )  </li>
+    }
+</ul>
+
+
