@@ -6,5 +6,5 @@
 	Mobile	Nvarchar(25) Not Null,						-- 휴대폰번호
 	Email	Nvarchar(25) Not Null,
 	Size	Nvarchar(25) Not Null Default('L'),				-- 티셔츠 기념품 사이즈
-	CreationDate	DateTime Dafault(Getdate())		-- 등록일
+	CreationDate	DateTime Default(Getdate())		-- 등록일
 )

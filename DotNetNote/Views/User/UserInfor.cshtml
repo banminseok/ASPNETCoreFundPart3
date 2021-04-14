@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "회원정보 관리";
+}
+
+<h2>@ViewData["Title"].</h2>
+
+<div>
+    @User.FindFirst(System.Security.Claims.ClaimTypes.Name).Value 님의 정보는 아래와 같습니다.
+</div>

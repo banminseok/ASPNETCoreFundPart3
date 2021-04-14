@@ -31,11 +31,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScaffoldingDemo", "Scaffold
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNote.Angular", "DotNetNote.Angular\DotNetNote.Angular.csproj", "{506A174A-3148-4137-BB1B-10ECCC29ECEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetSale.Devices", "DotNetSale.Devices\DotNetSale.Devices.csproj", "{F79F8DE4-A172-4A12-A4BF-148D3022ED19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetSale.Devices", "DotNetSale.Devices\DotNetSale.Devices.csproj", "{F79F8DE4-A172-4A12-A4BF-148D3022ED19}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ETC", "_ETC", "{4E7A3811-882F-497D-99ED-A6B44FB9CB0D}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNote", "DotNetNote\DotNetNote.csproj", "{C3A7B62C-C29A-4D68-81E4-38D6E7174E20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNote", "DotNetNote\DotNetNote.csproj", "{C3A7B62C-C29A-4D68-81E4-38D6E7174E20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "HelloUser";
+}
+
+<h2>@ViewData["Title"].</h2>
+@if (User.Identity.IsAuthenticated)
+{
+    <div>@User.FindFirst("UserId").Value 님, 반갑습니다.</div>
+    <div>@User.FindFirst(System.Security.Claims.ClaimTypes.Name).Value </div>
+    <div>@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value</div>
+}
+else
+{
+    <a href="/User/Login">로그인</a>
+
+    <a href="/User/Register">회원가입</a>
+}
+
+
+<ul>
+    <li><a asp-action="Register">/User/Register</a></li>
+    <li><a asp-action="Login">/User/Login</a></li>
+    <li><a asp-action="Logout">Logout</a></li>
+</ul>
+
+@*@await Html.PartialAsync("_LoginPartial");*@

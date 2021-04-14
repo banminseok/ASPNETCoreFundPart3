@@ -1,0 +1,537 @@
+/ Install-Package System.Data.SqlClient
+// Install-Package Dapper
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Linq;
+using Dapper;
+using System.Data.SqlClient;
+using System.Data;
+
+namespace VideoAppCore.Models
+{
+    public class VideoRepositoryDapper : IVideoRepositoryAsync
+    {
+        private readonly IDbConnection db; 
+
+        public VideoRepositoryDapper(string connectionString)
+        {
+            db = new SqlConnection(connectionString);
+        }
+
+        public async Task<Video> AddVideoAsync(Video model)
+        {
+            const string query =
+                "Insert Into Videos(Title, Url, Name, Company, CreatedBy) Values(@Title, @Url, @Name, @Company, @CreatedBy);" +
+                "Select Cast(SCOPE_IDENTITY() As Int);";
+
+            int id = await db.ExecuteScalarAsync<int>(query, model);
+
+            model.Id = id;
+
+            return model; 
+        }
+
+        public async Task<Video> GetVideoByIdAsync(int id)
+        {
+            const string query = "Select * From Videos Where Id = @Id";
+
+            var video = await db.QueryFirstOrDefaultAsync<Video>(query, new { id }, commandType: CommandType.Text);
+
+            return video; 
+        }
+
+        public async Task<List<Video>> GetVideosAsync()
+        {
+            const string query = "Select * From Videos;";
+
+            var videos = await db.QueryAsync<Video>(query);
+
+            return videos.ToList(); 
+        }
+
+        public async Task RemoveVideoAsync(int id)
+        {
+            const string query = "Delete Videos Where Id = @Id";
+
+            await db.ExecuteAsync(query, new { id }, commandType: CommandType.Text);
+        }
+
+        public async Task<Video> UpdateVideoAsync(Video model)
+        {
+            const string query = @"
+                    Update Videos 
+                    Set 
+                        Title = @Title, 
+                        Url = @Url, 
+                        Name = @Name, 
+                        Company = @Company, 
+                        ModifiedBy = @ModifiedBy 
+                    Where Id = @Id";
+
+            await db.ExecuteAsync(query, model);
+
+            return model;
+        }
+    }
+}
+
+//ASP.NET & Core를 다루는 기술 13장에서 발췌
+//CRUD와 연관된 메서드 이름
+
+//CRUD 관련 메서드 이름을 지을 때에는 Add, Get, Update, Remove 등의 단어를 많이 사용한다.이러한 단어를 접두사 또는 접미사로 사용하는 것은 권장 사항이지 필수 사항은 아니다.
+//Add()
+//	AddHero()
+//Get()
+//	GetAll(): 최근에 GetAll() 메서드 이름을 많이 사용하는 경향이 있다.
+//	GetHeroes()
+//GetById()
+//	GetHeroById()
+//Update()
+//	UpdateHero()
+//Remove()
+//	RemoveHero()
+
+
+using Dapper;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+
+namespace DotNetNote.Models
+{
+    public class NoteCommentRepository
+    {
+        private SqlConnection con;
+
+        public NoteCommentRepository()
+        {
+            con = new SqlConnection(ConfigurationManager
+                .ConnectionStrings["ConnectionString"]
+                .ConnectionString);
+        }
+
+
+        /// <summary>
+        /// 특정 게시물에 댓글 추가
+        /// </summary>
+        /// <param name="model"></param>
+        public void AddNoteComment(NoteComment model)
+        {
+            //파라미터 추가
+            var parameters = new DynamicParameters();
+            parameters.Add("@BoardId", value: model.BoardId, dbType: DbType.Int32);
+            parameters.Add("@Name", value: model.Name, dbType: DbType.String);
+            parameters.Add("@Opinion", value: model.Opinion, dbType: DbType.String);
+            parameters.Add("@Password", value: model.Password, dbType: DbType.String);
+
+            string sql = @"
+                Insert Into NoteComments (BoardId, Name, Opinion, Password)
+                Values(@BoardId, @Name, @Opinion, @Password);
+                Update Notes Set CommentCount = CommentCount + 1 
+                Where Id = @BoardId
+            ";
+            con.Execute(sql, parameters, commandType: CommandType.Text);
+        }
+
+
+        /// <summary>
+        /// 특정 게시물에 해당하는 댓글 리스트
+        /// </summary>
+        /// <param name="boardId"></param>
+        /// <returns></returns>
+        public List<NoteComment> GetNoteComments(int boardId)
+        {
+            return con.Query<NoteComment>("Select * From NoteComments" +
+                " Where BoardId=@BoardId",
+                new { BoardId = boardId },
+                commandType: CommandType.Text).ToList();
+        }
+
+        /// <summary>
+        /// 특정게시물의 특정 id에 해당하는 댓글 카운트
+        /// </summary>
+        /// <param name="boardId"></param>
+        /// <param name="id"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public int GetCountBy(int boardId, int id, string password)
+        {
+            return con.Query<int>(@"Select Count(*) From NoteComments
+                Where BoardId = @BoardId And Id = @Id 
+                And Password = @Password",
+                new { BoardId = boardId, Id = id, Password = password },
+                commandType: CommandType.Text).SingleOrDefault();
+        }
+
+        /// <summary>
+        /// 댓글 삭제
+        /// </summary>
+        /// <param name="boardId"></param>
+        /// <param name="id"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public int DeleteNoteComment(int boardId, int id, string password)
+        {
+            return con.Execute(@"Delete NoteComments
+                Where BoardId = @BoardId And Id=@Id 
+                And Password = @Password;
+                Update Notes Set CommentCount = CommentCount -1
+                Where Id= @BoardId",
+                new { BoardId = boardId, Password = password },
+                commandType: CommandType.Text);
+        }
+
+        /// <summary>
+        /// 최근 댓글 리스트 전체
+        /// </summary>
+        /// <returns></returns>
+        public List<NoteComment> GetRecentComments()
+        {
+            string sql = @"SELECT TOP 3 Id, BoardId, Opinion, PostDate 
+                FROM NoteComments Order By Id Desc";
+            return con.Query<NoteComment>(sql).ToList();
+        }
+    }
+}
+
+using Dapper;
+using DotNetNote.Models;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace DotNetNote.Models
+{
+    public class NoteRepository : INoteRepository
+    {
+        private IConfiguration _config;
+        private SqlConnection con;
+        private ILogger<NoteRepository> _logger;
+
+        /// <summary>
+        /// 데이터 저장, 수정, 답변 공통메서드
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="formType"></param>
+        /// <returns></returns>
+        public int SaveOrUpdate(Note n, BoardWriteFormType formType)
+        {
+            int r = 0;
+            var p = new DynamicParameters();
+
+            p.Add("@Name", value: n.Name, dbType: System.Data.DbType.String);
+            p.Add("@Email", value: n.Email, dbType: DbType.String);
+            p.Add("@Title", value: n.Title, dbType: DbType.String);
+            p.Add("@Content", value: n.Content, dbType: DbType.String);
+            p.Add("@Password", value: n.Password, dbType: DbType.String);
+            p.Add("@Encoding", value: n.Encoding, dbType: DbType.String);
+            p.Add("@Homepage", value: n.Homepage, dbType: DbType.String);
+            p.Add("@FileName", value: n.FileName, dbType: DbType.String);
+            p.Add("@FileSize", value: n.FileSize, dbType: DbType.Int32);
+
+            switch (formType)
+            {
+                case BoardWriteFormType.Write:
+                    //[b] 글쓰기 전용
+                    p.Add("@PostIp", value: n.PostIp, dbType: DbType.String);
+
+                    r = con.Execute("WriteNote", p
+                        , commandType: CommandType.StoredProcedure);
+                    break;
+                case BoardWriteFormType.Modify:
+                    //[b] 수정하기 전용
+                    p.Add("@ModifyIp",
+                        value: n.ModifyIp, dbType: DbType.String);
+                    p.Add("@Id", value: n.Id, dbType: DbType.Int32);
+
+                    r = con.Execute("ModifyNote", p,
+                        commandType: CommandType.StoredProcedure);
+                    break;
+                case BoardWriteFormType.Reply:
+                    //[b] 답변쓰기 전용
+                    p.Add("@PostIp", value: n.PostIp, dbType: DbType.String);
+                    p.Add("@ParentNum",
+                        value: n.ParentNum, dbType: DbType.Int32);
+
+                    r = con.Execute("ReplyNote", p,
+                        commandType: CommandType.StoredProcedure);
+                    break;
+            }
+            return r;
+
+        }
+        /// <summary>
+        /// 게시판 글쓰기
+        /// </summary>
+        /// <param name="model"></param>
+        public void Add(Note model)
+        {
+            _logger.LogInformation("데이터입력");
+            try
+            {
+                SaveOrUpdate(model, BoardWriteFormType.Write);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError("데이터 입력 에러 : " + ex);
+            }
+        }
+        public NoteRepository(IConfiguration config, ILogger<NoteRepository> logger)
+        {
+            _config = config;
+            _logger = logger;
+            con = new SqlConnection(_config.GetSection("ConnectionStrings")
+                .GetSection("DefaultConnection").Value);
+
+        }
+        /// <summary>
+        /// 수정하기
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public int UpdateNote(Note model)
+        {
+            int r = 0;
+            _logger.LogInformation("데이터 수정");
+            try
+            {
+                r = SaveOrUpdate(model, BoardWriteFormType.Modify);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError("데이터 수정 에러 :" + ex);
+            }
+            return r;
+        }
+        /// <summary>
+        /// 답변글쓰기
+        /// </summary>
+        /// <param name="model"></param>
+        public void ReplyNote(Note model)
+        {
+            _logger.LogInformation("데이터 답변");
+            try
+            {
+                SaveOrUpdate(model, BoardWriteFormType.Reply);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError("데이터 답변 에러 : " + ex);
+            }
+            throw new NotImplementedException();
+        }
+        /// <summary>
+        /// 게시판 리스트
+        /// </summary>
+        /// <param name="page"></param>
+        /// <returns></returns>
+        public List<Note> GetAll(int page)
+        {
+            _logger.LogInformation("데이터 출력");
+            try
+            {
+                var parameters = new DynamicParameters( new { Page = page});
+                return con.Query<Note>(
+                    "ListNotes", parameters,
+                    commandType: CommandType.StoredProcedure
+                    ).ToList();
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError("데이터 출력 에러:" + ex);
+            }
+            return null;
+        }
+        /// <summary>
+        /// 검색 카운트
+        /// </summary>
+        /// <param name="searchField"></param>
+        /// <param name="searchQuery"></param>
+        /// <returns></returns>
+        public int GetCountBySearch(string searchField, string searchQuery)
+        {
+            try
+            {
+                return con.Query<int>(
+                    "SearchNoteCount", 
+                    new {SearchField = searchField, SearchQuery = searchQuery},
+                    commandType: CommandType.StoredProcedure
+                    ).SingleOrDefault();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("카운트 출력 에러:" + ex);
+                return -1;
+            }
+        }
+        /// <summary>
+        /// NOtes 테이블의 모든 레코드 수
+        /// </summary>
+        /// <returns></returns>
+        public int GetCountAll()
+        {
+            try
+            {
+                return con.Query<int>(
+                    "Select Count(*) From Notes"
+                    ).SingleOrDefault();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("에러발생");
+                return -1;
+            }
+        }
+        /// <summary>
+        /// Id에 해당하는 파일명 반환
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public string GetFileNameById(int id)
+        {
+            return con.Query<string>(
+                "Select FileName From Notes Where Id=@Id",
+                new {Id=id}
+                ).SingleOrDefault();
+        }
+
+        /// <summary>
+        /// 검색 결과 리스트
+        /// </summary>
+        /// <param name="page"></param>
+        /// <param name="searchField"></param>
+        /// <param name="searchQuery"></param>
+        /// <returns></returns>
+        public List<Note> GetSeachAll(int page, string searchField, string searchQuery)
+        {
+            var parameters = new DynamicParameters(
+                new {Page = page,
+                SearchField = searchField,
+                SearchQuery = searchQuery}
+                );
+            return con.Query<Note>(
+                "SearchNotes", parameters,
+                commandType: CommandType.StoredProcedure
+                ).ToList();
+        }
+
+        /// <summary>
+        /// 다운 카운트 1 증가
+        /// </summary>
+        /// <param name="fileName"></param>
+        public void UpdateDownCount(string fileName)
+        {
+            con.Execute("Update Notes Set DownCount = DownCount + 1"
+                + " Where FileName = @FileName", new { fileName = fileName });
+        }
+        public void UpdateDownCountById(int id)
+        {
+            var p = new DynamicParameters(new { Id = id });
+            con.Execute("Update Notes Set DownCount = DownCount + 1 "
+                + " Where Id = @Id", p, commandType: CommandType.Text);
+        }
+
+
+
+        /// <summary>
+        /// 상세보기
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Note GetNoteById(int id)
+        {
+            var parameters = new DynamicParameters(new { Id = id });
+            return con.Query<Note>("ViewNote", parameters,
+                commandType: CommandType.StoredProcedure).SingleOrDefault();
+        }
+
+
+        /// <summary>
+        /// 삭제
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public int DeleteNote(int id, string password)
+        {
+            return con.Execute("DeleteNote",
+                new { Id = id, Password = password },
+                commandType: CommandType.StoredProcedure);
+        }
+
+        /// <summary>
+        /// 최근 올라온 사진 리스트 4개 출력 : DotNetNote\_NewPhotos.cshtml
+        /// </summary>
+        /// <returns></returns>
+        public List<Note> GetNewPhotos()
+        {
+            string sql =
+                 "SELECT TOP 4 Id, Title, FileName, FileSize FROM Notes "
+                 + " Where FileName Like '%.png' Or FileName Like '%.jpg' Or "
+                 + " FileName Like '%.jpeg' Or FileName Like '%.gif' "
+                 + " Order By Id Desc";
+            return con.Query<Note>(sql).ToList();
+        }
+
+        /// <summary>
+        /// 최근 글 리스트 : HOme/index.cshtml
+        /// </summary>
+        /// <param name="category"></param>
+        /// <returns></returns>
+        public List<Note> GetNoteSummaryByCategory(string category)
+        {
+            string sql = "SELECT TOP 3 Id, Title, Name, PostDate, FileName, "
+                + " FileSize, ReadCount, CommentCount, Step "
+                + " FROM Notes "
+                + " Where Category = @Category Order By Id Desc";
+            return con.Query<Note>(sql, new { Category = category }).ToList();
+        }
+
+
+        /// <summary>
+        /// 최근 글 리스트 전체(최근 글 5개 리스트)
+        /// </summary>
+        public List<Note> GetRecentPosts()
+        {
+            string sql = "SELECT TOP 3 Id, Title, Name, PostDate FROM Notes "
+                + " Order By Id Desc";
+            return con.Query<Note>(sql).ToList();
+        }
+
+        /// <summary>
+        /// 최근 글 리스트 n개
+        /// </summary>
+        public List<Note> GetRecentPosts(int numberOfNotes)
+        {
+            string sql =
+                $"SELECT TOP {numberOfNotes} Id, Title, Name, PostDate "
+                + " FROM Notes Order By Id Desc";
+            return con.Query<Note>(sql).ToList();
+        }
+
+        /// <summary>
+        /// 특정 게시물을 공지사항(NOTICE)으로 올리기
+        /// </summary>
+        public void Pinned(int id)
+        {
+            con.Execute(
+                "Update Notes Set Category = 'Notice' Where Id = @Id"
+                , new { Id = id });
+        }
+
+
+
+
+
+
+    }
+}

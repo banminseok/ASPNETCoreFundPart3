@@ -46,8 +46,8 @@ namespace DotNetNote.BlazorServer
             //    new CompanyRepositoryAdo(Configuration["ConnectionStrings:DefaultConnection"]));
             //services.AddSingleton<ICompanyRepository>(
             //    new CompanyRepositoryAdo(Configuration.GetConnectionString("DefaultConnection")));
-            //services.AddSingleton<ICompanyRepository>(
-            //   new CompanRepositoryDapper(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddTransient<ICompanyRepository>(
+            //   new CompanyRepositoryDapper(Configuration.GetConnectionString("DefaultConnection")));
             services.AddSingleton<ICompanyRepository, CompanyRepositoryEntityFramework>();
            
         }

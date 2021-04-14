@@ -70,3 +70,14 @@ D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\DotNetNote.pdb
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\DotNetNote.genruntimeconfig.cache
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\Attendee\Index.cshtml.g.cs
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\Attendee\Create.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\User\Login.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\User\Logout.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\User\Register.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\User\HelloUser.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\User\UserInfor.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\SessionDemo\GetSession.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\SessionDemo\Index.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\SessionDemo\GetDate.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\SessionDemo\SetDate.cshtml.g.cs
