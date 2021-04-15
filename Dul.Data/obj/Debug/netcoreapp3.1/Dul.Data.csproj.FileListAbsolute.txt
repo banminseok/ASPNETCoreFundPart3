@@ -10,7 +10,6 @@ F:\VSTEst2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.pdb
 D:\VsTest2\ASPNETCoreFundPart3\Dul.Data\bin\Debug\netcoreapp3.1\Dul.Data.deps.json
 D:\VsTest2\ASPNETCoreFundPart3\Dul.Data\bin\Debug\netcoreapp3.1\Dul.Data.dll
 D:\VsTest2\ASPNETCoreFundPart3\Dul.Data\bin\Debug\netcoreapp3.1\Dul.Data.pdb
-D:\VsTest2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.csprojAssemblyReference.cache
 D:\VsTest2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.AssemblyInfoInputs.cache
 D:\VsTest2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.AssemblyInfo.cs
 D:\VsTest2\ASPNETCoreFundPart3\Dul.Data\obj\Debug\netcoreapp3.1\Dul.Data.csproj.CoreCompileInputs.cache

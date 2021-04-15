@@ -31,6 +31,9 @@ namespace DotNetNote
             services.AddSingleton<IUserRepository>(new UserRepository(Configuration.GetConnectionString("DefaultConnection")));
             //services.AddTransient<IUserRepository, UserRepositoryDapper>();
 
+            services.AddSingleton<IMyNotificationRepository>(new MyNotificationRepository(Configuration.GetConnectionString("DefaultConnection")));
+
+
             ////[1] ASP.NET Core 쿠키 인증: 단순형
             //services.AddAuthentication("Cookies").AddCookie();
             // 쿠키 인증 적용 최소한의 코드 

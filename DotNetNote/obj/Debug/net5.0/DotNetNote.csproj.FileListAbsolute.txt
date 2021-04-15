@@ -81,3 +81,7 @@ D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\SessionDe
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\SessionDemo\Index.cshtml.g.cs
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\SessionDemo\GetDate.cshtml.g.cs
 D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\SessionDemo\SetDate.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\MyNotification\Index.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\MyNotification\MyNotificaton.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\MyNotification\MyNotificatonWithModal.cshtml.g.cs
+D:\VsTest2\ASPNETCoreFundPart3\DotNetNote\obj\Debug\net5.0\Razor\Views\MyNotification\MyPage.cshtml.g.cs

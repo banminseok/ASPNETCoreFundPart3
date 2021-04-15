@@ -1,0 +1,36 @@
+﻿@model DotNetNote.Models.MyNotification
+
+@{
+    ViewData["Title"] = "My Page";
+}
+<h2>@ViewData["Title"]</h2>
+@*<div class="form-group">
+        <a asp-controller="Attendee" asp-action="Create" class="btn btn-outline-dark ">참가 등록하기</a>
+    </div>*@
+<hr />
+<div>
+    <input type="hidden" id="hdnUserId" value="@ViewBag.UserId" />
+</div>
+
+<div>
+    <ul>
+        <li>@Model.Id - @Model.Message - @Model.Timestamp.ToString() </li>
+    </ul>
+</div>
+
+@section Scripts{
+    <script>
+        $(function () {
+
+            var userId = parseInt($("#hdnUserId").val(), 10);
+            // 웹 API 호출 - 알림확인처리
+            $.get("/api/Completefication?userId=" + userId)
+                .done(function (data) {
+                    if (data) {
+                        alert("알림확인 처리완료.");
+                    } 
+                });
+        });
+    </script>
+
+}

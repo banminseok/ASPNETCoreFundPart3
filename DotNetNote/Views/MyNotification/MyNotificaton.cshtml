@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "알림이 있으면 출력";
+}
+<h2>@ViewData["Title"]</h2>
+@*<div class="form-group">
+        <a asp-controller="Attendee" asp-action="Create" class="btn btn-outline-dark ">참가 등록하기</a>
+    </div>*@
+<hr />
+<div>
+    <input type="button" id="btnCheck" value="알림이있는지 확인" />
+    <input type="hidden" id="hdnUserId" value="@ViewBag.UserId" />
+</div>
+@section Scripts{
+    <script>
+        $(function () {
+            $("#btnCheck").click(function () {
+                var userId = parseInt($("#hdnUserId").val(), 10);
+                // 웹 API 호출
+                $.get("/api/IsNotification?userId=" + userId).done(function (data) {
+                    if (data) {
+                        alert("알림이 있습니다.");
+                    } else {
+                        alert("알림이 없습니다.");
+                    }
+                });
+            });
+        });
+    </script>
+
+}
